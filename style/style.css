@@ -1,0 +1,264 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: black;
+    min-width: 100%;
+}
+
+#TopMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    margin-right:10% ;
+    
+    
+}
+
+#TopMenu a{
+    text-decoration: none;
+    color: white;
+  
+}
+
+.MenuChoice{
+    height: 50%;
+    width: 50%;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.MenuChoice:hover{
+    border: 2px #0eadca solid;
+    box-shadow: 0px 0px 15px #d1d949;
+    border-radius: 100%;
+    animation: Portal 5s ease-in-out infinite;
+}
+
+#logo{
+    height: 100%;
+    width: 25%;
+}
+
+#logo img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: darkslategrey;
+    height: 10vh;
+    font-family: RickFont;
+    color: #0eadca;
+    text-shadow: #d1d949 0px 1px 1px;
+}
+
+
+@keyframes Portal {
+    0% {
+      background-color: #2d8935;
+    }
+    50% {
+      background-color: #71ca15;
+    }
+    100% {
+      background-color: #2d8935;
+    }
+}
+
+#PresPic{
+    max-width: 25%;
+    width: 100%;
+    max-height: 10%;
+    display: flex;
+    
+    margin-top: 5%;
+    
+} 
+
+#PresPic img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text{
+    text-align: center;
+    max-width: 25%;
+    font-size: 150%;
+}
+
+#pickle{
+    height: 10%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    position: relative;
+    min-height: 100%;
+    
+    
+}
+
+.textfooter{
+    text-align: center;
+    max-width: 25%;
+}
+
+#footercontent{
+    display: flex;
+    justify-content: space-around;
+    padding-right: 2%;
+    height: 100%;
+}
+
+#copyright{
+    text-align: center;
+    background-color: grey;
+    height: 100%;
+  }
+  .text{
+    width: 50%;
+
+}
+.card{
+    border: #d1d949 solid 2px;
+    border-radius: 15%;
+    height: 30vh;
+    width: auto;
+    display: flex;
+    margin: 1%;
+    background-color: #0eadca ;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-top: 5%;
+}
+
+.cardImg{
+  max-width: 60%;
+  max-height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+.cardTitle{
+    text-align: center;
+}
+
+
+.cardText{
+    margin-left:5%;
+    display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+@media only screen and (max-width: 850px) {
+    .text{
+        text-align: center;
+        max-width: 50%;
+        font-size: 200%;
+    }
+    #PresPic{
+        max-width: 50%;
+        width: 100%;
+        max-height: 20%;
+       
+        
+    } 
+    #pickle{
+        height: 10%;
+        width: 25%;
+        display: flex;
+        justify-content: center;
+    }
+  }
+
+
+  @media only screen and (max-width: 700px) {
+    header{
+        height: 150%;
+        display: flex;
+        justify-content: space-around;
+    }
+<<<<<<< HEAD
+    
+
+
+
+=======
+>>>>>>> c37641e6c37b2485253cfb1b7b13d857be2e8fe2
+    #logo{
+        height: 100%;
+        width: 25%;
+        display: flex;
+        align-items: center;
+    }
+    
+    #logo img{
+        max-width: 150%;
+        max-height: 150%;
+    }
+    #TopMenu{
+        
+        margin-right:0;
+        
+    }
+    .text{
+        text-align:start;
+        max-width: 50%;
+        font-size: 200%;
+    }
+    .MenuChoice{
+        margin-right: 50%;
+    }
+  }
+
+  @font-face {
+    font-family: RickFont;
+    src: url(./font/get_schwifty.ttf);
+  }
+
+  @media only screen and (max-width: 400px) {
+    
+    #TopMenu{
+        display: block;   
+    }
+}
+
+.request{
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+}

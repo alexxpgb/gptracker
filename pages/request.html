@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>Personnages</title>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img
+          src="../style/images/Rick_et_Morty_Logo_FR.png"
+          alt="logo Rick et Morty"
+        />
+      </div>
+      <div id="TopMenu">
+        <div class="MenuChoice">
+          <a href="/">Page Principale</a>
+        </div>
+        <div class="MenuChoice">
+          <a href="/request">Requêtes</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="request">
+      <form method="POST">
+        <input
+          type="text"
+          name="input"
+          class="formulaire"
+          placeholder="Nom d'un personnages"
+          autofocus
+        />
+      </form>
+    </div>
+
+    <div class="cards">
+      {{range $v := .Data.Results}}
+      <a href="/character?id={{.ID}}">
+        <div class="card">
+          <div class="cardImg">
+            <img src="{{$v.Image}}" alt="{{$v.Name}}" />
+          </div>
+          <div class="CardContent">
+            <h5 class="cardTitle">{{$v.Name}}</h5>
+            <div class="cardText"></div>
+            <p>{{$v.Species}} - {{$v.Gender}}</p>
+            <p>Status: {{$v.Status}}</p>
+          </div>
+        </div>
+        {{end}}
+      </a>
+    </div>
+
+    <footer>
+      <div id="footercontent">
+        <div class="textfooter">
+          <h1>A propos de nous</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta,
+            fuga velit esse similique reiciendis iure quis recusandae odit
+            doloremque perferendis voluptates corporis iste vitae soluta
+            eveniet! Ut doloribus consequuntur fuga.
+          </p>
+        </div>
+        <div>
+          <h1>Nous contacter</h1>
+          <a href="">rickandmorty@wagadougou.fr</a>
+        </div>
+      </div>
+      <div id="copyright">
+        <p>©2023-2023. All right reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>
